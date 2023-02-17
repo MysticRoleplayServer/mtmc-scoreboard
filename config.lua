@@ -1,21 +1,3 @@
-
-# MTMC Scoreboard
-
-A basic free scoreboard for FiveM
-
-Requires QBCore
-
-
-
-## Dependencies
-
-QBCore
-
-## Config
-
-Adjust config to how you like, the original config is below
-
-
 Config = {}
 
 Config.DisplayStaff = false
