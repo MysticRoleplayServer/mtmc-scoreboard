@@ -3,6 +3,10 @@
 
 A basic free scoreboard for FiveM
 
+![image](https://user-images.githubusercontent.com/84265583/219730768-c25254d3-f8b8-4bf1-be9c-3bf9836c6107.png)
+
+
+
 Requires QBCore
 
 
