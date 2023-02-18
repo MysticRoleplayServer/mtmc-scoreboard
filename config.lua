@@ -10,21 +10,16 @@ Config.Jobs = {
         icon = 'fa-solid fa-handcuffs',
         color = '#1660DB'
     },
-    ['taxi'] =    {
-        label = 'Taxi',
-        icon = 'fa-solid fa-taxi',
-        color = '#EBBA00'
+    ['lawyer'] =    {
+        label = 'Lawyer',
+        icon = 'fa-solid fa-gavel',
+        color = '#89addd'
     },
     ['ambulance'] = {
         label = 'EMS',
         icon = 'fa-solid fa-truck-medical',
         color = '#ad0303'
     },
-    ['realestate'] = {
-        label = 'Real Estate',
-        icon = "fa-solid fa-house",
-        color = '#06731a'
-    }
 }
 
 Config.Gangs = {
@@ -38,9 +33,11 @@ Config.Gangs = {
         icon = 'fa-solid fa-gun',
         color = '#c9c908'
     },
-    ['cartel'] = {
-        label = 'Cartel',
-        icon = 'fa-solid fa-joint',
-        color = '#0d9184'
-    }
+
+    ['mongrels'] = {
+        label = 'Mongrels',
+        icon = 'fa-solid fa-vest-patches',
+        color = '#FFFFFF'
+    },
+    
 }

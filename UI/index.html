@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-inspired.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
@@ -22,56 +22,61 @@
 
 <body>
     <div id="app" class="app-container">
-        <div class="jobs-section">
-            <div v-for="job in jobData" class="job-info" :style="getBoxShadow(job)">
-                <div class="job-header">
-                    <div :style="{color : job.color}" class="job-icon">
-                        <i :class="job.icon"></i>
+       
+        <div class="app-header">
+            <div class="jobs-section">
+                <div v-for="job in jobData" class="job-info" :style="getBoxShadow(job)">
+                    <div class="job-header">
+                        <div :style="{color : job.color}" class="job-icon">
+                            <i :class="job.icon"></i>
+                        </div>
+                        <div class="job-content">
+                            {{job.label}} : {{job.onDutyCount}}
+                        </div>
                     </div>
-                    <div class="job-content">
-                        {{job.label}}
-                    </div>
-                </div>
-                <div class="job-content">
-                    <div>
-                        On Duty : {{job.onDutyCount}}
-                    </div>
-                    <div>
-                        Off Duty : {{job.offDutyCount}}
-                    </div> 
+                    <!-- <div class="job-content">
+                        <div>
+                            On Duty : {{job.onDutyCount}}
+                        </div>
+                        <div>
+                            Off Duty : {{job.offDutyCount}}
+                        </div> 
+                    </div> -->
                 </div>
             </div>
-        </div>
-        <div class="gangs-section">
-            <div v-for="job in gangData" class="job-info" :style="getBoxShadow(job)">
-                <div class="job-header">
-                    <div :style="{color : job.color}" class="job-icon">
-                        <i :class="job.icon"></i>
+            <div style="flex: 1;">
+                <h1 class="title">Your Server Name</h1>
+            </div>
+            <div class="gangs-section">
+                <div v-for="job in gangData" class="job-info" :style="getBoxShadow(job)">
+                    <div class="job-header">
+                        <div :style="{color : job.color}" class="job-icon">
+                            <i :class="job.icon"></i>
+                        </div>
+                        <div class="job-content">
+                            {{job.label}}: {{job.count}}
+                        </div>
                     </div>
-                    <div class="job-content">
-                        {{job.label}}
-                    </div>
+                    <!-- <div class="job-content">
+                        <div>
+                            Online : {{job.count}}
+                        </div>
+                    </div> -->
+                   
                 </div>
-                <div class="job-content">
-                    <div>
-                        Online : {{job.count}}
-                    </div>
-                </div>
-               
             </div>
         </div>
         <div class="player-section">
             <div v-for="player in playerData" class="player-item" :class="{'isStaff' : player.isStaff}">
                 <div class="player-image">
-                    <img :src="player.image || './brand-logo.png'" class="profile-image" />
+                    <img :src="player.image || './defaultavatar.png'" class="profile-image" />
                 </div>
                 <div class="player-details">
-                    <div class="player-name">
-                        {{player.fullname}}
-                    </div>
-                    <div class="player-job">
-                        {{player.job}}
-                    </div>
+                       <p class="player-name">{{player.fullname}}</p>
+                       &nbsp;
+                       &nbsp;
+                       &nbsp;
+                       <p class="player-job">Job:{{player.job}}</p>
                 </div>
             </div>
         </div>

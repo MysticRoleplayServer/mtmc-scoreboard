@@ -1,0 +1,169 @@
+html,
+body {
+    background: transparent;
+}
+
+body {
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--scroll-bar-bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-bar-color);
+    border-radius: 20px;
+    border: 3px solid var(--scroll-bar-bg-color);
+}
+
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(99, 89, 133, 0.866);
+    width: 80%;
+    position: absolute;
+    right: 10%;
+    border-radius: 15px;
+    border: solid 1px #443C68;
+    font-family: 'Roboto', sans-serif !important;
+    letter-spacing: 0.1vh;
+    font-weight: 400;
+    
+}
+
+.title {
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.4vh;
+    color: white
+    
+}
+
+.app-header {
+    display: flex;
+    margin: auto;
+    align-content: stretch;
+    justify-items: stretch;
+    justify-content: stretch;
+    align-items: stretch;
+    background-color: #443c68e2;
+    width: 100%;
+    flex: 1;
+}
+
+.jobs-section {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    align-self: flex-start;
+    justify-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    padding: 0.5vh;
+    color: white;
+    letter-spacing: 0.1vh;
+}
+
+.gangs-section {
+    display: flex;
+    right: 0;
+    top: 0;
+    flex: 1;
+    flex-direction: row-reverse;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    padding: 0.5vh;
+    color: white;
+    letter-spacing: 0.1vh;
+
+}
+
+.player-section {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    padding: 1.5vh;
+    color: white;
+}
+
+.job-header {
+    display: flex;
+    flex-direction: row;
+    gap : 0.6vh
+}
+
+.job-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2vh;
+    height: 3vh;
+    background-color: #635985;
+    margin: 0.5vh;
+    border-radius: 6px;
+    padding: 0.2vh;
+}
+
+.player-item{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #635985;
+    padding: 0.5vh;
+    margin: 0.3vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #443c68bc;
+    border-radius: 6px;
+}
+
+.player-name {
+
+    float: left;
+}
+
+.player-job {
+
+    float: right;
+}
+
+.isStaff {
+    border: 1px solid rgb(71, 61, 1);
+    box-shadow : 0px 0px 2px 2px gold;
+}
+
+.profile-image {
+    height: 3.5vh;
+    margin-right: 0.5vh;
+}
