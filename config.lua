@@ -6,19 +6,24 @@ Config.RefreshRate = 60000
 
 Config.Jobs = {
     ['police'] =    {
-        label = 'Police',
+        label = 'LSPD',
         icon = 'fa-solid fa-handcuffs',
-        color = '#1660DB'
+        color = '#0000FF'
     },
-    ['lawyer'] =    {
-        label = 'Lawyer',
-        icon = 'fa-solid fa-gavel',
-        color = '#89addd'
+    ['bcso'] =    {
+        label = 'BCSO',
+        icon = 'fa-solid fa-handcuffs',
+        color = '#FF5733'
+    },
+    ['sadot'] = {
+        label = 'SADOT',
+        icon = 'fa-solid fa-vest',
+        color = '#FFC300'
     },
     ['ambulance'] = {
         label = 'EMS',
         icon = 'fa-solid fa-truck-medical',
-        color = '#ad0303'
+        color = '#C70039'
     },
 }
 
@@ -26,18 +31,21 @@ Config.Gangs = {
     ['ballas'] =  {
         label = 'Ballas',
         icon = 'fa-solid fa-user-ninja',
-        color = '#A216DB'
+        color = '#36454F'
     },
     ['vagos'] = {
         label = 'Vagos',
         icon = 'fa-solid fa-gun',
-        color = '#c9c908'
+        color = '#097969'
     },
-
-    ['mongrels'] = {
-        label = 'Mongrels',
+    ['cartel'] = {
+        label = 'Cartel',
+        icon = 'fa-solid fa-gun',
+        color = '#F4BB44'
+    },
+    ['lostmc'] = {
+        label = 'Lost MC',
         icon = 'fa-solid fa-vest-patches',
-        color = '#FFFFFF'
+        color = '#C19A6B'
     },
-    
 }
