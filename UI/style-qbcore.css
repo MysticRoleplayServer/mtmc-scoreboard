@@ -42,7 +42,7 @@ body {
     position: absolute;
     right: 10%;
     border-radius: 15px;
-    border: solid 1px #dc143c;
+    border: solid 1px #375E97;
     font-family: 'Poppins', sans-serif !important;
     letter-spacing: 0.1vh;
     font-weight: 400;
@@ -64,7 +64,7 @@ body {
     justify-items: stretch;
     justify-content: stretch;
     align-items: stretch;
-    background: #dc143c;
+    background: #375E97;
     width: 100%;
     flex: 1;
 }
@@ -141,7 +141,7 @@ body {
 .player-item{
     display: flex;
     flex-direction: row;
-    border: 1px solid #dc143c;
+    border: 1px solid #375E97;
     padding: 0.5vh;
     margin: 0.3vh;
     justify-content: center;
